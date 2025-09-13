@@ -3,6 +3,122 @@
     box-sizing: border-box;
 }
 
-nav {
-    display: block;
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#desc {
+    text-align: left;
+}
+
+#page-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nav-main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+header, footer {
+    background-color: rgb(255, 71, 71);
+    padding: 1%;
+}
+
+nav {
+    background-color: rgb(228, 146, 146);
+    width: 30%;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    border: 5px solid black;
+    border-radius: 0;
+    margin: 3% auto;
+    width: 80%;
+    padding: 2%;
+    text-align: center;
+    background-color: rgb(247, 207, 207);
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: calc(2px + 2vw);
+}
+
+main {
+    background-color: rgb(247, 207, 207);
+    height: 100vh;
+    width: 70%;
+    padding: 2%;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main img {
+    padding-bottom: 1%;
+}
+
+#img-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h3 {
+    text-align: left;
+    padding-top: 6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main ul {
+    padding: 0;
+    padding-left: 2%;
+    text-align: left;
+}
+
+main li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    #nav-main {
+    flex-direction: column;
+    }
+
+    main {
+       width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    
+}
+
+
